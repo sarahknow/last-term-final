@@ -1,0 +1,802 @@
+@charset "UTF-8";
+/* Responsive Setup */
+@-moz-viewport { width: device-width; scale: 1;}
+@-ms-viewport { width: device-width; scale: 1;}
+@-webkit-viewport { width: device-width; scale: 1;}
+@-o-viewport { width: device-width; scale: 1;}
+@viewport { width: device-width; scale: 1;}
+
+html{
+	-moz-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	-o-text-size-adjust: 100%;
+	text-size-adjust: 100%;
+}
+
+/* CSS */
+.ease-all{
+	-moz-transition: all 350ms ease-in-out;
+	-ms-transition: all 350ms ease-in-out;
+	-webkit-transition: all 350ms ease-in-out;
+	-o-transition: all 350ms ease-in-out;
+	transition: all 350ms ease-in-out;
+}
+
+html, body, footer{
+	font-family:'driod serif';
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+p{
+	line-height: 2rem;	
+	font-family: 'Noto Serif', serif;
+	font-size:25px;
+	padding:.25rem 2rem;
+}
+
+h2 {
+	font-family: 'Raleway', sans-serif;
+	font-weight:200;
+	font-size:40px;
+	margin-top: .5rem;
+	color:black;
+	padding-left: 1rem;
+}
+
+h3 { 
+ 	text-align:center;
+ 	font-family: 'Raleway', sans-serif;
+	font-weight:200;
+	font-size:45px;
+	color:white;
+	text-transform:uppercase;
+	text-shadow: 1px 1px 2px #000;
+} 
+
+h4 {
+	text-align:center;
+ 	font-family: 'Raleway', sans-serif;
+	font-weight:200;
+	font-size: 36px;
+	color:#464646;
+	text-transform: uppercase;
+	margin:0;
+	
+}
+
+h5 {
+	text-align:center;
+ 	font-family: 'Raleway', sans-serif;
+	font-weight:200;
+	font-size: 24px;
+	color:#676767;
+	text-transform: uppercase;
+}
+
+h6{
+	font-family: 'Raleway', sans-serif;
+	font-weight:200;
+	font-size: 36px;
+	text-transform: uppercase;
+	margin:0;
+}
+
+strong { 
+	text-align:center;
+ 	font-family: 'Raleway', sans-serif;
+	font-weight:500;
+	font-size: 24px;
+	color:#8A8A8A;
+	text-transform: uppercase;
+	margin:0;
+}
+
+.seperator{	
+	background:black; 
+  	height: 1px;
+  	border: none;
+	margin-bottom:1rem;
+}
+
+
+
+/*slide*/
+
+.fixed-bg {
+  	height:400px;
+  	width:100%;
+  	position:relative;
+  	text-align:center;
+  	z-index:-1;
+  	overflow:hidden;
+}
+  .inner-wrap {
+    width:100%;
+    height:400px;
+    position:fixed;
+    background:url(../images/soccer5-blur.jpg)no-repeat;
+    transition:all 3s ease-in-out;
+  }
+
+.container {
+	margin:0 auto;
+	position:relative;
+	background:url(../images/debut_light.png) repeat;
+	padding:3em;
+  	z-index:800;
+ 	overflow:auto;
+}
+
+.content {
+	margin:0 auto;
+	position:relative;
+	background:url(../images/white_wall_hash_@2X.png)repeat;
+	padding:3em;
+	z-index:800;
+	overflow:auto;
+	border-bottom: 1px outset rgba(133,119,120,.2) #811C1E;
+}
+
+.blocks{
+	height:25rem;
+}	
+
+.caption{
+	position:relative;
+	top:25%;
+	padding:2rem;
+}
+
+/* Header */
+.first{
+	background:url(../images/soccer5.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	height:24rem;
+	background-repeat:no-repeat;	
+}
+
+.first-2{
+	background:url(../images/hill2.jpg) no-repeat center center fixed;
+	 -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	height:24rem;
+	background-repeat:no-repeat; 
+}
+
+.first-3{
+	background:url(../images/middle.jpg) no-repeat center center fixed;
+	 -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	height:24rem;
+	background-repeat:no-repeat; 
+}
+
+.first-4{
+	background:url(../images/top.jpg) no-repeat center center fixed;
+	 -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	height:24rem;
+	background-repeat:no-repeat; 
+}
+
+
+
+.logo{
+	width: 8rem;
+	position: absolute;
+	top: 2%;
+	left: 2%;
+	z-index: 1000;
+}
+
+.potato {
+	width:100%;
+}
+
+/*Footer*/
+.contact{
+	background:url(../images/mooning_@2X.png) repeat;
+	position:relative;
+	z-index:900;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	overflow:auto;
+	text-align:center;
+}
+
+.line {
+	background:#8A8A8A; 
+  	height: 1px;
+  	border: none;
+	margin-top: 1rem;
+	margin-bottom:1rem;
+	width: 75%;
+}
+
+
+/* Navigation Top Styles */
+
+.nav-long{
+	display: none;
+}
+
+.nav-btn, 
+.nav-btn:link, 
+.nav-btn:visited {
+	display: block;
+	height: 50px;
+	width: 50px;
+	position: absolute;
+	top: 2.5%;
+	right: 1%;
+	background: url("../images/nav-icon.svg") no-repeat center center;
+}
+
+.nav-top a, 
+.nav-top a:link,
+.nav-top a:visited{
+	display: block;
+	background-color:#fff;
+	text-align:left;
+	color:#000;
+	text-decoration: none;
+	padding: 0.5rem 1rem;
+}
+
+.menu{
+	width: 13rem;
+	position:absolute;
+	top: 4rem; 
+	right: 1rem;
+	padding: 1rem;
+	background: #fff;
+	z-index:1100;
+}
+
+.nav-top a:hover,
+.nav-top a:focus,
+.nav-top a:active{
+	background-color:#FFE362;
+	color:#000;
+}
+
+/* Toggle Nav*/
+
+.nav-top{
+	display: none;
+}
+
+.nav-top[data-state="expanded"]{
+	display: block;
+	
+}
+
+.nav-btn[data-state="active"]{
+	background: url(../images/nav-close.svg) no-repeat center center;
+}
+
+
+/* Home Page */
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box; 
+  -webkit-box-sizing: border-box; 
+  box-sizing: border-box;
+}
+
+.black {
+  background-image:url(../images/debut_light.png); 
+  background-position: initial initial; 
+  background-repeat: initial initial; 
+  background-color: rgb(0, 0, 0);
+  color: black;
+}
+
+.white {
+  background-image:url(../images/white_wall_hash_@2X.png); 
+  background-position: initial initial; 
+  background-repeat: initial initial; 
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+
+.blank-one{
+  background: url(../images/soccer2-blur.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  text-align: center;
+  height:30rem;
+}
+
+.blank-two {
+  background: url(../images/soccer3.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  text-align: center;
+  height:30rem;
+}
+
+.blank-three {
+  background:url(../images/soccer4.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  text-align: center;
+  height:30rem;
+}
+
+.blank-four {
+  background:url(../images/hill5.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  text-align: center;
+  height:30rem;
+}
+
+.blank-five {
+  background:url(../images/huddle.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  text-align: center;
+  height:30rem;
+}
+
+.blank-six {
+  background:url(../images/hill4.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  text-align: center;
+  height:30rem;
+}
+
+.blank-7{
+  background: url(../images/middle2.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  text-align: center;
+  height:30rem;
+}
+
+.blank-8{
+  background: url(../images/middle3.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  text-align: center;
+  height:30rem;
+}
+.blank-9{
+  background: url(../images/middle4.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  text-align: center;
+  height:30rem;
+}
+.blank-10{
+  background: url(../images/top2.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  text-align: center;
+  height:30rem;
+}
+.blank-11{
+  background: url(../images/top3.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  text-align: center;
+  height:30rem;
+}
+.blank-12{
+  background: url(../images/top4.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  text-align: center;
+  height:30rem;
+}
+
+
+.text {
+  width: 100%;
+  margin: auto;
+  line-height: 30px;
+}
+
+.pasta {
+  font-size: 24px;
+  padding: 30px;
+  overflow:auto;
+}
+
+/* Flexslider*/
+.flexslider{
+	margin:50px auto;
+	border:0;
+	box-shadow: none;
+}
+
+.flex-control-paging li a{
+	display:none;
+}
+
+h7{
+	color: white;
+	font-family:'raleway',sans-serif;
+	font-weight:200;
+}
+
+.gallery {
+	position:relative;
+	padding:1rem;
+	top:7rem;
+	background-color:rgba(0,0,0,0.30);
+	z-index:1000;
+	margin:auto;
+}
+.list-2{
+	text-align:center;
+}
+
+em {
+	font-style:italic;
+}
+
+.image{
+	max-width: 30rem;
+}
+
+
+
+.direction{
+	width: 100%;
+}
+/**/
+.time li{
+	margin: .5rem 0;
+	line-height: 2;
+	color: #FFF;
+	padding-left: 1rem;
+	font-family: 'Raleway', sans-serif;
+}
+
+.time dt{
+	color: black;
+	font-weight: 500;
+	font-size:20px;
+}
+
+.time dd{
+	color: black;
+	font-weight: 300;
+	font-size:1rem;
+}
+
+.time dd:last-child{
+	color:#000;
+	font-style: italic;
+	font-size: 1rem;
+}
+
+.image{
+	margin:auto;
+}
+
+.profile{
+	width:100%;
+}
+
+/* Footer*/
+
+.nav-bottom{
+	overflow: auto;
+	display: inline-block;
+	width: 100%;
+}
+
+.nav-bottom li{
+	font-family:'raleway', sans-serif;
+	font-weight: 500;
+	font-size:20px;
+	display: inline-block;
+}
+
+
+.nav-bottom a, 
+.nav-bottom a:link,
+.nav-bottom a:visited{
+	display: block;
+	text-align:center;
+	margin:auto;
+	width:7rem;
+	color:#696969;
+	text-decoration: none;
+	padding: .75rem;
+	text-shadow: 0 2px 1px #CCCCCC;
+	border-bottom: 1px solid transparent;
+}
+
+.nav-bottom a:hover,
+.nav-bottom a:focus,
+.nav-bottom a:active{
+	color:#FFE362;
+	border-bottom: 1px solid #FFE362;
+}
+
+
+/* Social Links */ 
+
+.table {
+	display: table;
+	margin: 2rem auto;
+	width:10.5rem;
+}
+
+.hide-text {
+	text-indent: 100%; 
+	white-space: nowrap;
+	overflow: hidden; 
+	display: block; 
+}
+
+.social li a, 
+.social li a:link, 
+.social li a:visited{
+	display: inline-block; 
+	float: left; 
+	height: 40px; 
+	width: 40px;
+	margin-right: 1rem;
+	text-align: center; 
+	padding-top: 0.8125rem;
+	
+	-webkit-border-radius:50%;
+	-moz-border-radius:50%;
+	-ms-border-radius:50%;
+	-o-border-radius:50%;
+	border-radius:50%;
+	
+	color: #fff;
+	/*background-color: #222;*/
+	
+	-webkit-box-shadow: inset 0px 0px 0px 40px #222;
+	-moz-box-shadow: inset 0px 0px 0px 40px #222;
+	-ms-box-shadow: inset 0px 0px 0px 40px #222;
+	-o-box-shadow: inset 0px 0px 0px 40px #222;
+	box-shadow: inset 0px 0px 0px 40px #222;
+}
+
+.social li a:hover,
+.social li a:active, 
+.social li a:focus{
+	color: #222;
+	
+	-webkit-box-shadow: inset 0px 0px 0px 3px #222;
+	-moz-box-shadow: inset 0px 0px 0px 3px #222;
+	-ms-box-shadow: inset 0px 0px 0px 3px #222;
+	-o-box-shadow: inset 0px 0px 0px 3px #222;
+	box-shadow: inset 0px 0px 0px 3px #222;	
+}
+
+.email {
+	text-decoration: none;
+	font-size: 21px;
+	color:#4B4B4B;
+	text-transform:lowercase;
+	margin:.5rem;
+}
+
+.email:hover {
+	color:#FFE362;
+	text-decoration:underline;
+}
+
+.email-2 {
+	text-decoration:none;
+	color: black;
+}
+.email-2:hover {
+	color:#FFE362;
+}
+
+.profile{
+	max-width: 80%;
+	margin-left:10%;
+}
+@media only screen and (min-width: 38em){
+.map{
+	width: 50%;
+	float:right;
+}
+
+.list{
+	width:50%;
+	float:left;
+}
+}
+@media only screen and (min-width: 48em){
+.box-b {
+	width:48%;
+	float:right;
+}
+
+.box-c{
+	width:48%;
+	float:left;
+}
+.nav-top{
+	display:none;
+}
+
+.nav-top[data-state="expanded"]{
+	display: none;
+	
+}
+
+.nav-long{
+	display: block;
+}
+
+.nav-btn, 
+.nav-btn:link, 
+.nav-btn:visited {
+	display: none;
+}
+
+.nav-long a, 
+.nav-long a:link,
+.nav-long a:visited{
+	display: inline-block;
+	width: 7rem;
+	text-decoration: none;
+	background:none;
+	text-align:center;
+	float:left;
+	color:white;
+	font-family: 'Noto serif', serif;
+}
+
+.menu{
+	width: 30rem;
+	position:absolute;
+	top: 0rem; 
+	right:0rem;
+	background:none;
+}
+
+.nav-long a:hover,
+.nav-long a:focus,
+.nav-long a:active{
+	color:#FFE362;
+	border-bottom: 1px solid #FFE362;
+}
+
+p{
+	line-height: 1.5rem;	
+	font-size:18px;
+}
+
+h2 {
+	font-size:30px;
+}
+
+
+h4 {
+	font-size: 28px;
+}
+
+
+h6{
+	font-size: 20px;
+}
+
+strong,
+h5 { 
+	font-size: 18px;
+}
+
+.email {
+	font-size: 15px;
+}
+
+.nav-bottom li{
+	font-size:15px;
+}
+
+.blob li{
+	width:49%;
+	display:inline-block;
+}
+}
+
+@media only screen and (min-width: 59em){
+.image,
+.blob{
+	width:50%;
+	float:right;
+	overflow:auto;
+}
+
+.left{
+	width:50%;
+	float:left;
+}
+
+.left-1{
+	width:50%;
+	float:left;
+}
+
+.right {
+	width:50%;
+	float:right;
+}
+.list-2{
+	width:50%;
+	float:right;
+	text-align:center;
+}
+}
+
+@media only screen and (min-width: 68em){
+.image{
+	width:35%;	
+}
+
+.left-1{
+	width:60%;
+	float:left;
+}
+}
+
+@media only screen and (min-width: 75em){
+.pasta {
+	padding: 3rem 6rem;
+}
+
+.left{
+	width:50%;
+}
+
+.right {
+	width: 50%;
+}
+}
+
+
+@media only screen and (min-width: 157em){
+p {
+	font-size:	35px;
+}

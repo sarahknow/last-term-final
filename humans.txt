@@ -1,0 +1,18 @@
+/* TEAM */
+
+Designer & Developer: Sarah Knowles
+Twitter: @sarah_know
+Location: Ottawa, Canada
+
+
+
+/* THANKS */
+
+Thanks to the awesome people that make the interwebz.
+
+
+/* SITE */
+Last update: 2013/12/09
+Standards: HTML5, CSS3
+Components: Modernizr, Jquery, etc...
+Software: Adobe, Livereload, Sublime Text 2

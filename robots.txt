@@ -1,0 +1,7 @@
+
+Sitemap: http://know0035.site44.com/dsn1543/project-1/sitemap.xml
+
+User-agent: *
+
+Disallow: /tmp/
+Disallow: /assets/
